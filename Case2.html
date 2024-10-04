@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <style>
+       /* div{
+            width: 400px;
+            height: 400px;
+            border-radius: 100%;
+            background: grey;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        div>div:first-child{
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            background-color: #4c4c4c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+            text-align: center;
+        }
+*/
+
+       body{
+           background: darkblue;
+       }
+       div{
+          width: 200px;
+           aspect-ratio: 1/1;
+           border-radius: 100%;
+           background: grey;
+           position: absolute;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           top: 0;
+           margin: auto;
+           /*border: 10px solid ;
+           border-top-color: red;*/
+
+       }
+
+       div>h1{
+            width: max-content;
+           height: max-content;
+           color: white;
+           position: absolute;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           top: 0;
+           margin: auto;
+
+       }
+
+       div::before{
+           content: " ";
+           border: 10px solid white;
+           border-radius: 100%;
+           position: absolute;
+           border-top-color: red;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           top: 0;
+           margin: auto;
+
+
+       }
+
+       div:hover::before{
+           transform: rotate(360deg);
+           transition-duration: 2s ;
+       }
+
+
+    </style>
+</head>
+<body>
+<!--<div>
+    <div>RWAD</div>
+    <div></div>
+</div>-->
+
+<div>
+    <h1>RWAD</h1>
+</div>
+</body>
+</html>
